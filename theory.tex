@@ -1,0 +1,28 @@
+\section{Section}
+\subsection{Sub-section}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit Table~\ref{tab:table_2}. Duis vitae efficitur ligula, ac malesuada arcu. Cras sed vehicula eros, id pharetra odio. Aenean eu lacinia mauris. Integer ex leo, consectetur ut tempor in, dapibus in ligula. Donec a nunc et ex faucibus laoreet et eu lacus. Nulla vel odio nec massa feugiat molestie vitae sed nisi. Ut sed scelerisque mi.
+
+Pellentesque sapien tellus, iaculis et neque id, sagittis suscipit ex. Aliquam at rhoncus quam. Morbi sed egestas erat, id rhoncus elit. Pellentesque quis velit libero. Nulla porta arcu viverra metus tincidunt, in volutpat urna tristique. Curabitur sit amet odio velit. Maecenas ullamcorper tellus ipsum, ut fringilla erat maximus a. Duis massa orci, ultrices vel eros at, eleifend pharetra purus. Sed lobortis sagittis facilisis \cite{Long:2007uv}.
+
+\begin{table}
+	\tcapside
+	{\caption{Caption of table with side caption.}\label{tab:table_2}}
+	{\begin{tabular}{rcc}
+		\toprule
+		& Bkg. & Bkg. \\
+		& high & low \\
+		\midrule
+		Speed fast & \multirow{2}{*}{Short} & \multirow{2}{*}{Long} \\
+		Dist. long & & \\
+		\midrule
+		Speed fast & Very & \multirow{2}{*}{Short} \\
+		Dist. short & short & \\
+		\midrule
+		Speed slow & \multirow{2}{*}{Long} & Very \\
+		Dist. long &  & long \\
+		\midrule
+		Speed slow & \multirow{2}{*}{Short} & \multirow{2}{*}{Long} \\
+		Dist. short & & \\
+		\bottomrule
+	\end{tabular}}
+\end{table}

@@ -1,0 +1,63 @@
+\documentclass{sephdthesis}
+\usepackage{graphicx}
+\usepackage[unicode]{hyperref}
+\usepackage{multirow}
+\let\newfloat\undefined
+\usepackage[capbesideposition={top,inside},facing=yes,capbesidesep=quad]{floatrow}
+\newfloatcommand{tcapside}{table}[\capbeside]
+
+\captionnamefont{\bfseries}
+
+\input{identification}
+
+\begin{document}
+%\layout
+%---------
+\frontmatter \maketitle
+%---------
+\input{quotation}\cleardoublepage
+%---------
+\tableofcontents\cleardoublepage
+%---------
+\chapter{List of original papers}
+\input{publications}\cleardoublepage
+%---------
+\chapter{Abstract}
+\input{summary}\cleardoublepage
+%---------
+\chapter{Populärvetenskaplig sammanfattning}
+\input{swedsummary}\cleardoublepage
+%---------
+\chapter{Abbreviations}
+\input{abbreviations}\cleardoublepage
+%---------
+\mainmatter% \chapterheadings
+\pagestyle{ruled}
+\nouppercaseheads
+%---------
+\chapter{Introduction}
+\input{introduction}\cleardoublepage
+%---------
+\chapter{Theory}
+\input{theory}\cleardoublepage
+%---------
+\chapter{Materials and methods}
+\input{methods}\cleardoublepage
+%---------
+\chapter{Results and discussion}
+\input{resultscomments}\cleardoublepage
+%---------
+\chapter{Major conclusions}
+\input{majconcl}\cleardoublepage
+%---------
+\backmatter
+\chapter{Acknowledgments}
+\input{acknowledgments}\cleardoublepage
+
+\pagestyle{bib_style}
+\bibliographystyle{ieeetr}
+\bibliography{phd_papers}
+
+\cftaddtitleline{toc}{chapter}{Papers I-V}{}
+
+\end{document}

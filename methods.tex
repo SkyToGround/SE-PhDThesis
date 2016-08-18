@@ -1,0 +1,24 @@
+\section{Section}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit Table~\ref{tab:table_1}. Duis vitae efficitur ligula, ac malesuada arcu. Cras sed vehicula eros, id pharetra odio. Aenean eu lacinia mauris. Integer ex leo, consectetur ut tempor in, dapibus in ligula. Donec a nunc et ex faucibus laoreet et eu lacus. Nulla vel odio nec massa feugiat molestie vitae sed nisi. Ut sed scelerisque mi.
+
+\subsection{Subsection}
+Pellentesque sapien tellus, iaculis et neque id, sagittis suscipit ex. Aliquam at rhoncus quam. Morbi sed egestas erat, id rhoncus elit. Pellentesque quis velit libero. Nulla porta arcu viverra metus tincidunt, in volutpat urna tristique. Curabitur sit amet odio velit. Maecenas ullamcorper tellus ipsum, ut fringilla erat maximus a. Duis massa orci, ultrices vel eros at, eleifend pharetra purus. Sed lobortis sagittis facilisis \cite{Tyler:1996ur}.
+
+\begin{table}
+	\ttabbox
+	{\caption{Caption of regular table.}\label{tab:table_1}}
+	{\begin{minipage}{\textwidth}\begin{tabular}{lcccc}
+		\toprule
+		& \multicolumn{4}{c}{Detector system} \\
+		& \cline{1-4}
+		& \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4}\\
+		\midrule
+		Type	            	 			& HPGe 		& NaI 	& NaI 	& LaBr  \\
+		Volume (l)          				& 0.48 		& 0.35 		& 4 		& 0.35 \\
+		Efficiency (\%) 		& 123	  	& 100  		& n/a  		& 135  \\
+		Resolution\footnote{FWHM of the 662~keV Cs-137 peak.} (\%) 					& 0.15 		& 7.5  		& 7.5 		& 3.0   \\
+		Electronics 						& DigiDART 	& DigiBASE 	& DigiBASE 	& DigiBASE \\
+		Used in paper						& I, II, IV	& I, II, V 	& III 		& II \\
+		\bottomrule
+	\end{tabular}\end{minipage}}
+\end{table}
